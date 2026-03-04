@@ -1,0 +1,11 @@
+[project]
+name = "pdf-parser"
+version = "0.1.0"
+description = "Standalone PDF parser — converts PDF files to structured Markdown and table JSON"
+requires-python = ">=3.12"
+dependencies = [
+    "pymupdf>=1.26.7",
+    "fastapi>=0.117.1",
+    "uvicorn>=0.36.0",
+    "python-multipart>=0.0.9",
+]

@@ -1,0 +1,23 @@
+# PDF Parser configuration
+# All keys are optional — built-in defaults are used for any key that is absent.
+
+# ------------------------------------------------------------------
+# Parser settings (used by parse.py CLI and serve.py /parse/folder)
+# ------------------------------------------------------------------
+[parser]
+
+# Directory that contains the *.pdf files to parse.
+input_dir = "input"
+
+# Directory where all outputs are written.
+output_dir = "output"
+
+# Primary PyMuPDF find_tables() strategy.
+# Options: "lines_strict" | "lines" | "text" | "explicit"
+table_strategy = "lines_strict"
+
+# Fallback strategy used when the primary finds no tables on a page.
+table_fallback_strategy = "lines"
+
+# Logging verbosity: DEBUG | INFO | WARNING | ERROR
+log_level = "INFO"
